@@ -18,21 +18,38 @@
 
             <div class="form-group">
                 <label for="attractie">Naam attractie:</label>
-                <input type="text" name="attractie" id="attractie" class="form-input">
+                <input type="text" name="attractie" id="attractie">
             </div>
             <div class="form-group">
                 <label for="type">Type</label>
-                <!-- hier komt een dropdown -->
+                <select name="type">
+                    <option value=""> - kies een type - </option>
+                    <option value="achtbaan">Achtbaan</option>
+                    <option value="achtbaan">Draaiend</option>
+                    <option value="achtbaan">Kinderen</option>
+                    <option value="achtbaan">Horeca</option>
+                    <option value="achtbaan">Show</option>
+                    <option value="achtbaan">Waterattractie</option>
+                    <option value="darkride">Overig</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="capaciteit">Capaciteit p/uur:</label>
-                <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
+                <input type="number" min="0" name="capaciteit" id="capaciteit">
             </div>
             <div class="form-group">
                 <label for="melder">Naam melder:</label>
-                <input type="text" name="melder" id="melder" class="form-input">
+                <input type="text" name="melder" id="melder">
             </div>
-
+            <div class="form-group">
+                <label for="prioriteit">Prio:</label>
+                <input type="checkbox" name="prioriteit" id="prioriteit" class="checkbox-input"> Melding met prioriteit
+            </div>
+            <div class="form-group">
+                <label for="overig">Overig info:</label>
+                <textarea name="overig" id="overig" class="form-input" rows="4"></textarea>
+            </div>
+            
             <input type="submit" value="Verstuur melding">
 
         </form>
