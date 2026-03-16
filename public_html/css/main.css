@@ -137,12 +137,22 @@ h1+a{
 
 table{
     width: 100%;
+    
 }
 
-th{
+th, td{
     text-align: left;
 }
 
+tr:nth-child(odd){
+background-color: #ebebeb;
+}
+tr:first-child{
+background-color: #d3d3d3;
+}
+tr:hover{
+background-color: #c0f8ff;
+}
 /* HOME */
 
 .home{
