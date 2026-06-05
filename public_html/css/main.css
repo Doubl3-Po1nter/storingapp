@@ -137,7 +137,7 @@ h1+a{
 
 table{
     width: 100%;
-    
+
 }
 
 th, td{
@@ -367,3 +367,40 @@ label{
   }
 }
 
+.tabel-container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.nieuwe-melding-container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.edit-container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.edit-container .form-buttons {
+    display: flex;       /* Plaatst de knoppen naast elkaar */
+    gap: 10px;           /* Ruimte tussen de knoppen */
+}
+
+
+.form_container{
+  display: flex;
+  margin-top: 325px;
+  justify-content: center;
+}
+
+.mini-container{
+  display: flex;
+  gap: 20px;
+}

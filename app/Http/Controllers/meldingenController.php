@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //Variabelen vullen
 $attractie = $_POST['attractie'] ?? '';
 if(empty($attractie)) {
@@ -28,7 +28,7 @@ $prioriteit = isset($_POST['prioriteit']) ? 1 : 0;
 if(!empty($errors)) {
     var_dump($errors);
     die();
-} 
+}
 
 echo $attractie . " / " . $capaciteit . " / " . $melder;
 
