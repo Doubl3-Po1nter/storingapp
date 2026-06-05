@@ -3,8 +3,8 @@
 session_start();
 
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+$username = $_POST['username'] ?? '';
+$password = $_POST['password'] ?? '';
 
 require_once '../../../config/conn.php';
 
@@ -18,7 +18,7 @@ $statement->execute([
 
 $user = $statement->fetch(PDO::FETCH_ASSOC);
 
-if($statement->rowCount() < 1)
+if($statement->rowCount() < 1 || !$user)
 {
 die("Error: account bestaat niet");
 }

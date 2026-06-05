@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+<?php require_once __DIR__.'/config/config.php'; ?>
     <?php require_once 'resources/views/components/header.php'; ?>
 
     <div class="container home">
