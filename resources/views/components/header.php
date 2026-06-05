@@ -8,11 +8,12 @@
             <a href="<?php echo $base_url; ?>/resources/views/meldingen/index.php">Meldingen</a>
         </nav>
         <div class="mini-container">
-            <?php if(!isset($_SESSION['user_id']) == true): ?>
-                <p><a href="<?php echo $base_url; ?>/resources/views/login/login.php">Inloggen</a></p>
-            <?php else: ?>
-                <p><a href="../login/logout.php">Uitloggen</a></p>
-            <?php endif; ?>
+            <?php if(isset($_SESSION['user_id'])): ?>
+                <a href="<?php echo $base_url; ?>/../../../resources/views/login/logout.php">Uitloggen</a>
+            <?php else:?>
+                <p><a href="<?php echo $base_url; ?>/../../../resources/views/login/login.php">Inloggen</a></p>
+                <p><a href="<?php echo $base_url; ?>/register.php">Register</a> </p>
+            <?php endif;?>
         </div>
     </div>
 </header>
