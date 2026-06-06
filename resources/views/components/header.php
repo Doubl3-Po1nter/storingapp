@@ -12,7 +12,7 @@
                 <a href="<?php echo $base_url; ?>/../../../resources/views/login/logout.php">Uitloggen</a>
             <?php else:?>
                 <p><a href="<?php echo $base_url; ?>/../../../resources/views/login/login.php">Inloggen</a></p>
-                <p><a href="<?php echo $base_url; ?>/register.php">Register</a> </p>
+                <p><a href="<?php echo $base_url; ?>/register.php">Registreer</a> </p>
             <?php endif;?>
         </div>
     </div>
